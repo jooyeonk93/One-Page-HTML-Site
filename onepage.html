@@ -2,16 +2,18 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Photobook | Gallery</title>
+		<meta content="width=device-width,initial-scale=1.0" name="viewport">
+		<title>Exhibition | Gallery</title>
+		<link rel="stylesheet" href="./css/style1.css">
 	</head>
 	<body>
 	
 		<!-- NAV -->
-		<div>
-			<div>
-				<ul>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
-					<a href="#contact" id="link"><li>SIGN UP/LOG IN</li></a>
+					<a href="#contact" id="link"><li>SIGN UP</li></a>
 					<a href="#gallery" id="link"><li>GALLERY</li></a>
 				</ul>
 			</div>
@@ -20,34 +22,35 @@
 		
 		<!--HOME -->
 		<div id="home">
-			<div>
-				<div>
-					<span>Photobook</span>
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">Exhibition</span>
 				</div>
 			</div>
 		</div>
 		<!--END HOME -->
 		
 		<!-- ACCT CREATION  -->
-		<section>
-			<div id="contact">
-				<div>
-					<h2>Everyone is welcome!</h2>
-					<div>
-						<h3><span>Sign up to take a look!</span></h3>
-						<p>Please provide us with your basic contact information to create an account.</p>
-						<div>
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 div class="heading-padding">Sign up</h1>
+					<div class="signup">
+						<h2><span>Join our page!</span>
+							<br/>This website lets you view photos of your preference.
+						</h2>
+						<p class="create-text">
+						Please provide us with your basic contact information to create an account.
+						</p>
+						<div class="form-create">
 							<form action="" method="post">
-								<input class="create" type="text" value="First Name">
-								<br />
-								<br /><input class="create" type="text" value="Last Name">
-								<br />
-								<br /><input class="create" type="text" value="Email">
+								<input class="create" type="text" value="" placeholder="First Name">
+								<input class="create" type="text" value="" placeholder="Last Name">
+								<input class="create" type="text" value="" placeholder="Email">
 								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
-								<div>
-									<br />
+								<div class="submit">
 									<input type="submit" value="Submit">
 								</div>
 							</form>
@@ -56,31 +59,30 @@
 				</div>
 			</div>
 		</section>	
-						
 		<!-- END ACCT CREATION -->
 		
 		<!-- GALLERY -->
-		<section>
-			<div id="gallery">
+		<section id="gallery">
+			<div class="container">
 				<h1>Gallery</h1>
-				<div>
+				<div class="flex-container">
 				
 					<!-- PHOTO CONTAINER 1 -->
 					<h3>Space</h3>
-					<div class="row">
-						<div class="column">
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/space/space1.jpg" alt="space1" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/space/space2.jpg" alt="space2" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/space/space3.jpg" alt="space3" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/space/space4.jpeg" alt="space4" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/space/space5.jpg" alt="space5" style="width:20%">
 						</div>
 					</div>
@@ -90,20 +92,20 @@
 					<br />
 					<br />
 					<h3>Sports</h3>
-					<div class="row">
-						<div class="column">
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/sports/sports1.jpg" alt="sports1" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/sports/sports2.jpg" alt="sports2" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/sports/sports3.jpg" alt="sports3" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/sports/sports4.jpg" alt="sports4" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/sports/sports5.jpg" alt="sports5" style="width:20%">
 						</div>
 					</div>
@@ -113,20 +115,20 @@
 					<br />
 					<br />
 					<h3>Wildlife</h3>
-					<div class="row">
-						<div class="column">
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/wildlife/wildlife1.jpg" alt="wildlife1" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/wildlife/wildlife2.jpg" alt="wildlife2" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/wildlife/wildlife3.jpg" alt="wildlife3" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/wildlife/wildlife4.jpg" alt="wildlife4" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/wildlife/wildlife5.jpg" alt="wildlife5" style="width:20%">
 						</div>
 					</div>
@@ -136,20 +138,20 @@
 					<br />
 					<br />
 					<h3>Travel</h3>
-					<div class="row">
-						<div class="column">
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/travel/travel1.jpeg" alt="travel1" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/travel/travel2.jpg" alt="travel2" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/travel/travel3.jpg" alt="travel3" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/travel/travel4.jpg" alt="travel4" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/travel/travel5.jpg" alt="travel5" style="width:20%">
 						</div>
 					</div>
@@ -159,20 +161,20 @@
 					<br />
 					<br />
 					<h3>Plant</h3>
-					<div class="row">
-						<div class="column">
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/plant/plant1.jpg" alt="plant1" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/plant/plant2.jpg" alt="plant2" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/plant/plant3.jpg" alt="plant3" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/plant/plant4.jpg" alt="plant4" style="width:20%">
 						</div>
-						<div class="column">
+						<div class="photo">
 							<img src="./images/plant/plant5.jpg" alt="plant5" style="width:20%">
 						</div>
 					</div>
@@ -184,9 +186,11 @@
 		<!-- END GALLERY -->
 	
 		<!-- MISCELLANEOUS -->	
-		<section>	
-			<div>
-				<p>Photography Quotes From Photographers:</p>
+		<section id="quote">	
+			<div class="container">
+				<p class="quote-head">
+				Photography Quotes From Photographers:
+				</p>
 					<blockquote>
 						<strong>"Taking pictures is like tiptoeing into the kitchen late at night and stealing Oreo cookies."</strong>
 						<br /><em>- Diane Arbus</em>
@@ -203,11 +207,12 @@
 					</blockquote>
 			</div>
 		</section>
-	</body>	
 		<!-- END MISCELLANEOUS -->
 
 		<!-- FOOTER -->
-		<div>
-			www.photobook.gallery &nbsp;|&nbsp; &copy; 2019
+		<div id="footer">
+			www.exibition.gallery &nbsp;|&nbsp; &copy; 2019
 		</div>
 		<!-- END FOOTER -->	
+	</body>	
+</html>	
